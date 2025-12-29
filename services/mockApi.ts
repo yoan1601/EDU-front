@@ -1,5 +1,5 @@
 // Mock API service for EdTech SaaS data
-import { format, addDays, subDays } from 'date-fns';
+import { addDays, subDays } from 'date-fns';
 
 // Types
 export interface User {
@@ -183,7 +183,7 @@ const generateMockCourses = (tenantId: string): Course[] => [
 // Mock API functions
 export const mockApi = {
   // Authentication
-  login: async (email: string, password: string): Promise<{ user: User; token: string }> => {
+  login: async (email: string, _password: string): Promise<{ user: User; token: string }> => {
     await new Promise(resolve => setTimeout(resolve, 800));
     
     const mockUser: User = {
@@ -258,7 +258,7 @@ export const mockApi = {
   },
 
   // Analytics
-  getAnalytics: async (tenantId: string): Promise<Analytics> => {
+  getAnalytics: async (_tenantId: string): Promise<Analytics> => {
     await new Promise(resolve => setTimeout(resolve, 700));
     
     const userGrowth = Array.from({ length: 7 }, (_, i) => ({

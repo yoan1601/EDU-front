@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Save, AlertCircle, FileText, Download, GraduationCap, Users, TrendingUp, Award, BookOpen, Calculator, CheckCircle, XCircle, Minus } from 'lucide-react';
+import { Save, Download, GraduationCap, Users, TrendingUp, Award, BookOpen, Calculator, CheckCircle, XCircle, Minus } from 'lucide-react';
 import { Button } from '../ui/button-modern';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card-modern';
 import { Badge } from '../ui/badge-modern';
-import { Input, FormField } from '../ui/input-modern';
+import { Input } from '../ui/input-modern';
 import { Alert } from '../ui/feedback';
 
 interface Student {
@@ -21,7 +21,7 @@ interface Grade {
 export function GradesManagement() {
   const [selectedPromotion, setSelectedPromotion] = useState('L3-INFO');
   const [selectedSubject, setSelectedSubject] = useState('Mathématiques');
-  const [gradesCount, setGradesCount] = useState(12);
+  const [gradesCount] = useState(12);
   const [isSaving, setIsSaving] = useState(false);
   const [lastSaved, setLastSaved] = useState<Date | null>(null);
   const maxGrades = 20;

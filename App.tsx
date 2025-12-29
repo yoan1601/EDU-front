@@ -7,7 +7,6 @@ import { LoginScreen } from './components/auth/LoginScreen';
 import { SignupScreen } from './components/auth/SignupScreen';
 import { WelcomeScreen } from './components/auth/WelcomeScreen';
 import { Button } from './components/ui/button-modern';
-import { Badge } from './components/ui/badge-modern';
 import { LogOut, Settings, BookOpen } from 'lucide-react';
 
 type Role = 'superadmin' | 'admin' | 'teacher' | 'student';

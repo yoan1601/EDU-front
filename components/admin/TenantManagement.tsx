@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Save, Edit2, AlertCircle, Building2, Phone, Mail, MapPin, Users, GraduationCap, School, Check, X } from 'lucide-react';
+import { Save, Edit2, Building2, Phone, Mail, MapPin, Users, GraduationCap, School, X } from 'lucide-react';
 import { Button } from '../ui/button-modern';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card-modern';
 import { Badge } from '../ui/badge-modern';

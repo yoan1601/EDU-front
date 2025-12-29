@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calendar, Clock, MapPin, BookOpen, FileText, Info, User, GraduationCap, Award, TrendingUp, CheckCircle, XCircle, BarChart3 } from 'lucide-react';
+import { Calendar, Clock, MapPin, BookOpen, FileText, User, GraduationCap, Award, TrendingUp, CheckCircle, XCircle, BarChart3 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card-modern';
 import { Badge } from './ui/badge-modern';
 import { Button } from './ui/button-modern';

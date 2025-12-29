@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Building2, Users, TrendingUp, DollarSign, Search, Eye, CreditCard, Shield, Globe, BarChart3, Activity, Filter, MoreHorizontal, ArrowUpRight, UserCheck, Calendar } from 'lucide-react';
+import { Building2, Users, DollarSign, Search, Eye, CreditCard, Shield, Globe, BarChart3, Activity, Filter, MoreHorizontal, ArrowUpRight, UserCheck, Calendar } from 'lucide-react';
 import { SuperAdminSubscriptions } from './superadmin/SuperAdminSubscriptions';
 import { Button } from './ui/button-modern';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card-modern';
@@ -26,7 +26,6 @@ interface Tenant {
 export function SuperAdminView() {
   const [activeTab, setActiveTab] = useState<SuperAdminTab>('dashboard');
   const [searchQuery, setSearchQuery] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
 
   const tenants: Tenant[] = [
     {

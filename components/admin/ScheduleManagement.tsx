@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Plus, AlertTriangle, Calendar, Clock, MapPin, User, Download, FileText, Edit2, Trash2, Save, X, GraduationCap, BookOpen } from 'lucide-react';
+import { Plus, Calendar, Clock, MapPin, User, Download, FileText, Edit2, Trash2, Save, X, GraduationCap, BookOpen } from 'lucide-react';
 import { Button } from '../ui/button-modern';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card-modern';
 import { Badge } from '../ui/badge-modern';
@@ -235,7 +235,7 @@ export function ScheduleManagement() {
                 </tr>
               </thead>
               <tbody>
-                {timeSlots.map((time, idx) => (
+                {timeSlots.map((time) => (
                   <tr key={time} className="border-b border-neutral-200">
                     <td className="p-2 border-r border-neutral-200 bg-neutral-50 text-center">
                       <span className="text-xs text-neutral-600 font-medium">{time}</span>

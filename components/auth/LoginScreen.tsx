@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Lock, Eye, EyeOff, AlertCircle, BookOpen, ArrowLeft } from 'lucide-react';
+import { Mail, Lock, Eye, EyeOff, BookOpen, ArrowLeft } from 'lucide-react';
 import { Button } from '../ui/button-modern';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card-modern';
 import { Input, FormField } from '../ui/input-modern';

@@ -10,8 +10,6 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, error, leftIcon, rightIcon, ...props }, ref) => {
-    const hasIcons = leftIcon || rightIcon;
-    
     return (
       <div className="relative">
         {leftIcon && (

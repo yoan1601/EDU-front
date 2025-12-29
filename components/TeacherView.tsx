@@ -1,4 +1,4 @@
-import { Calendar, Clock, MapPin, BookOpen, Info, User, GraduationCap, School, Award } from 'lucide-react';
+import { Calendar, Clock, MapPin, BookOpen, User, GraduationCap, School, Award } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card-modern';
 import { Badge } from './ui/badge-modern';
 import { Alert } from './ui/feedback';
