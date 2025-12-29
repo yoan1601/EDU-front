@@ -1,0 +1,502 @@
+@import "tailwindcss";
+
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Override Tailwind's button reset */
+@layer components {
+  .button-modern {
+    background-color: unset;
+    color: unset;
+    border: unset;
+  }
+  
+  /* Brand colors - All elements */
+  [class*="bg-brand-50"] {
+    background-color: rgb(240 249 255) !important;
+  }
+  
+  [class*="bg-brand-100"] {
+    background-color: rgb(224 242 254) !important;
+  }
+  
+  [class*="bg-brand-200"] {
+    background-color: rgb(186 230 253) !important;
+  }
+  
+  [class*="bg-brand-600"] {
+    background-color: rgb(2 132 199) !important;
+  }
+  
+  [class*="bg-brand-700"] {
+    background-color: rgb(3 105 161) !important;
+  }
+  
+  [class*="bg-brand-800"] {
+    background-color: rgb(7 89 133) !important;
+  }
+  
+  [class*="bg-brand-900"] {
+    background-color: rgb(12 74 110) !important;
+  }
+  
+  /* Success colors - All elements */
+  [class*="bg-success-50"] {
+    background-color: rgb(240 253 244) !important;
+  }
+  
+  [class*="bg-success-100"] {
+    background-color: rgb(220 252 231) !important;
+  }
+  
+  [class*="bg-success-200"] {
+    background-color: rgb(187 247 208) !important;
+  }
+  
+  [class*="bg-success-500"] {
+    background-color: rgb(34 197 94) !important;
+  }
+  
+  [class*="bg-success-600"] {
+    background-color: rgb(22 163 74) !important;
+  }
+  
+  /* Warning colors - All elements */
+  [class*="bg-warning-50"] {
+    background-color: rgb(255 251 235) !important;
+  }
+  
+  [class*="bg-warning-100"] {
+    background-color: rgb(254 243 199) !important;
+  }
+  
+  [class*="bg-warning-500"] {
+    background-color: rgb(245 158 11) !important;
+  }
+  
+  [class*="bg-warning-600"] {
+    background-color: rgb(217 119 6) !important;
+  }
+  
+  /* Error colors - All elements */
+  [class*="bg-error-50"] {
+    background-color: rgb(254 242 242) !important;
+  }
+  
+  [class*="bg-error-100"] {
+    background-color: rgb(254 226 226) !important;
+  }
+  
+  [class*="bg-error-500"] {
+    background-color: rgb(239 68 68) !important;
+  }
+  
+  [class*="bg-error-600"] {
+    background-color: rgb(220 38 38) !important;
+  }
+  
+  /* Neutral colors - All elements */
+  [class*="bg-neutral-50"] {
+    background-color: rgb(248 250 252) !important;
+  }
+  
+  [class*="bg-neutral-100"] {
+    background-color: rgb(241 245 249) !important;
+  }
+  
+  [class*="bg-neutral-200"] {
+    background-color: rgb(226 232 240) !important;
+  }
+  
+  [class*="bg-neutral-600"] {
+    background-color: rgb(71 85 105) !important;
+  }
+  
+  [class*="bg-neutral-900"] {
+    background-color: rgb(15 23 42) !important;
+  }
+  
+  /* Text colors - All elements */
+  [class*="text-brand-600"] {
+    color: rgb(2 132 199) !important;
+  }
+  
+  [class*="text-brand-700"] {
+    color: rgb(3 105 161) !important;
+  }
+  
+  [class*="text-brand-800"] {
+    color: rgb(7 89 133) !important;
+  }
+  
+  [class*="text-brand-900"] {
+    color: rgb(12 74 110) !important;
+  }
+  
+  [class*="text-success-600"] {
+    color: rgb(22 163 74) !important;
+  }
+  
+  [class*="text-success-700"] {
+    color: rgb(21 128 61) !important;
+  }
+  
+  [class*="text-success-800"] {
+    color: rgb(22 101 52) !important;
+  }
+  
+  [class*="text-warning-600"] {
+    color: rgb(217 119 6) !important;
+  }
+  
+  [class*="text-warning-700"] {
+    color: rgb(180 83 9) !important;
+  }
+  
+  [class*="text-error-600"] {
+    color: rgb(220 38 38) !important;
+  }
+  
+  [class*="text-error-700"] {
+    color: rgb(185 28 28) !important;
+  }
+  
+  [class*="text-neutral-600"] {
+    color: rgb(71 85 105) !important;
+  }
+  
+  [class*="text-neutral-700"] {
+    color: rgb(51 65 85) !important;
+  }
+  
+  [class*="text-neutral-900"] {
+    color: rgb(15 23 42) !important;
+  }
+  
+  [class*="text-white"] {
+    color: rgb(255 255 255) !important;
+  }
+  
+  /* Border colors - All elements */
+  [class*="border-brand-200"] {
+    border-color: rgb(186 230 253) !important;
+  }
+  
+  [class*="border-success-200"] {
+    border-color: rgb(187 247 208) !important;
+  }
+  
+  [class*="border-success-100"] {
+    border-color: rgb(220 252 231) !important;
+  }
+  
+  [class*="border-neutral-200"] {
+    border-color: rgb(226 232 240) !important;
+  }
+  
+  /* Common colors */
+  [class*="bg-white"] {
+    background-color: rgb(255 255 255) !important;
+  }
+  
+  [class*="bg-transparent"] {
+    background-color: transparent !important;
+  }
+}
+
+/* Modern CSS custom properties */
+:root {
+  --font-size: 16px;
+  
+  /* Modern color system */
+  --background: #fafafa;
+  --surface: #ffffff;
+  --foreground: #0a0a0a;
+  
+  /* Semantic colors */
+  --brand-50: #f0f9ff;
+  --brand-500: #0ea5e9;
+  --brand-600: #0284c7;
+  
+  --success-50: #f0fdf4;
+  --success-500: #22c55e;
+  
+  --warning-50: #fffbeb;
+  --warning-500: #f59e0b;
+  
+  --error-50: #fef2f2;
+  --error-500: #ef4444;
+  
+  /* Neutral grays */
+  --neutral-50: #fafafa;
+  --neutral-100: #f4f4f5;
+  --neutral-200: #e4e4e7;
+  --neutral-300: #d4d4d8;
+  --neutral-500: #71717a;
+  --neutral-600: #52525b;
+  --neutral-900: #18181b;
+
+  /* Enhanced borders and shadows */
+  --border-radius: 0.5rem;
+  --border-radius-lg: 0.75rem;
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  
+  /* Typography */
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+}
+
+/* Base typography and layout */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-size: var(--font-size);
+  line-height: 1.6;
+}
+
+/* Modern focus styles */
+:focus-visible {
+  outline: 2px solid var(--brand-500);
+  outline-offset: 2px;
+}
+
+/* Improved scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neutral-300);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral-400);
+}
+
+/* Custom animations */
+@keyframes slide-in-from-top {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Utility classes */
+.animate-in {
+  animation-duration: 200ms;
+  animation-fill-mode: both;
+}
+
+.fade-in {
+  animation-name: fade-in;
+}
+
+.slide-in-from-top {
+  animation-name: slide-in-from-top;
+}
+
+.slide-in-from-bottom {
+  animation-name: slide-in-from-bottom;
+}
+
+.scale-in {
+  animation-name: scale-in;
+}
+
+/* Remove all remaining wireframe styles - clean slate */
+
+.dark {
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+/* @theme is a Tailwind CSS v4 directive */
+/* stylelint-disable-next-line at-rule-no-unknown */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    /* stylelint-disable-next-line at-rule-no-unknown */
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
